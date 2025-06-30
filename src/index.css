@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --primary-color: #4b8b3b;
+  --secondary-color: #2e2e2e;
+  --accent-color: #ffeeba;
+  --text-color: #2f2f2f;
+  --light-bg: #f3f2ef;
+  --white: #ffffff;
+  --primary-bg : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+}
+
+html {
+  background-color: var(--light-bg);
+}
+
+.contact-form {
+  font-family: 'Source Code Pro', sans-serif, monospace;
+}
+
+body {
+  font-family: 'Outfit', Arial, sans-serif;
+  /* font-family: 'Source Code Pro', sans-serif, monospace; */
+  background: var(--light-bg);
+  color: var(--text-color);
+  
+}
+
+.logo {
+  font-family: 'Lilita One', sans-serif, monospace;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Footer */
+footer {
+  color: var(--white);
+  padding: 3rem 5%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: var(--primary-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--white);
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
