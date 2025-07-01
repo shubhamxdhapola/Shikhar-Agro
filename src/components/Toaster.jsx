@@ -5,7 +5,7 @@ const Toaster = () => {
     <ToastMaker
       toastOptions={{
         style: {
-          fontSize: "14px",
+          fontSize: "15px",
         },
         success: {
           iconTheme: {

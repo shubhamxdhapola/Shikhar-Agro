@@ -4,7 +4,6 @@ import { navTabs } from "../../../utils/data";
 import { useEffect, useRef } from "react";
 
 const SideMenu = ({ openSideMenu, setOpenSideMenu, toggleSideMenu }) => {
-
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -27,11 +26,13 @@ const SideMenu = ({ openSideMenu, setOpenSideMenu, toggleSideMenu }) => {
         {navTabs.map((item, index) => (
           <Link
             key={index}
-            className="uppercase cursor-pointer font-medium text-gray-700 text-sm sm:text-md"
+            className="w-fit relative uppercase cursor-pointer font-medium text-gray-700 text-sm sm:text-md before:content[' '] before:bg-[#4b8b3b] before:w-full before:h-[3px] before:absolute before:-bottom-1 before:scale-x-0 before:rounded before:duration-300 hover:before:scale-x-100 before:origin-left"
             to={item.name}
             smooth={true}
             duration={100}
             onClick={toggleSideMenu}
+            activeClass="active"
+            spy={true}
           >
             {item.tabName}
           </Link>

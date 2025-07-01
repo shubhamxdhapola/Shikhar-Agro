@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ServicesCard from "./ServicesCard";
-import { serviceCategories } from "../utils/data";
-import MobileServices from "./Services/MobileServices";
+import ServicesCard from "../Cards/ServicesCard";
+import { serviceCategories } from "../../utils/data";
+import MobileServices from "./MobileServices/MobileServices";
 
 const Services = () => {
   const [selectedCategory, setSelectedCategory] = useState(
@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <section className="pb-24 lg:pb-36" name="services">
       <div className="mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-14">
-        <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-14">
+        <div className="mb-8 sm:mb-10 md:mb-12 lg:mb-14"  data-aos="fade-right">
           <span className="text-white bg-[#4b8b3b] rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm">
             OUR SERVICES
           </span>
@@ -22,9 +22,9 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="lg:grid grid-cols-3 lg:gap-5 xl:gap-8 hidden">
+        <div className="lg:grid grid-cols-3 lg:gap-5 xl:gap-8 hidden"  data-aos="fade-left">
           {serviceCategories.map((service, index) => (
-            <div key={index} className="">
+            <div key={index} >
               <h3
                 className={`p-4 bg-white flex justify-center items-center gap-2 text-center font-semibold rounded-lg cursor-pointer shadow-sm ${
                   selectedCategory.serviceNo === index + 1
@@ -41,7 +41,7 @@ const Services = () => {
         </div>
 
         {/* Desktop Services */}
-        <div className="lg:grid grid-cols-3 lg:gap-5 xl:gap-8 mt-5 hidden">
+        <div className="lg:grid grid-cols-3 lg:gap-5 xl:gap-8 mt-5 hidden"  data-aos="fade-left">
           {selectedCategory.services.map((service, index) => (
             <ServicesCard key={index} service={service} />
           ))}

@@ -14,12 +14,21 @@ const MobileNav = () => {
           to="home"
           duration={500}
           smooth={true}
-          className="logo text-lg sm:text-xl text-[#4b8b3b]"
+          className="logo text-lg sm:text-xl text-[#4b8b3b] cursor-pointer"
           onClick={toggleSideMenu}
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-mirror="false"
         >
           Shikhar Agro
         </Link>
-        <span className="cursor-pointer" onClick={toggleSideMenu}>
+        <span
+          className="cursor-pointer"
+          onClick={toggleSideMenu}
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-mirror="false"
+        >
           {openSideMenu ? (
             <X className="text-gray-800" />
           ) : (

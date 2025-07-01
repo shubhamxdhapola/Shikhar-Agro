@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { GiFarmer, GiPowder } from "react-icons/gi";
 import { PiDogFill } from "react-icons/pi";
-
+import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
@@ -117,11 +117,11 @@ export const SOCIAL_HANDLES = [
     icon: FaInstagram,
   },
   {
-    socialHandleUrl: "https://www.instagram.com",
+    socialHandleUrl: "https://www.facebook.com",
     icon: FaFacebookF,
   },
   {
-    socialHandleUrl: "mailto:shikharagro@help.com",
-    icon: IoIosMail,
+    socialHandleUrl: "https://www.x.com",
+    icon: FaXTwitter,
   },
 ];

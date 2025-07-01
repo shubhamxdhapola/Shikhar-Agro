@@ -1,8 +1,6 @@
-import { serviceCategories } from "../../utils/data";
+import ServicesCard from "../../Cards/ServicesCard";
+import { serviceCategories } from "../../../utils/data";
 import Slider from "react-slick";
-
-import ServicesCard from "../ServicesCard";
-import { ChevronRight } from "lucide-react";
 
 const MobileServices = () => {
   const settings = {
@@ -25,7 +23,7 @@ const MobileServices = () => {
   return (
     <div className="lg:hidden">
       {serviceCategories.map((service, index) => (
-        <div key={index} className="mb-15">
+        <div key={index} className="mb-15" data-aos="fade-right">
           <h3 className="flex justify-center items-center mb-6 border border-[#4b8b3b] text-gray-800 px-4 py-3 rounded-full w-fit text-sm gap-2 font-semibold mx-auto">
             <span>{<service.icon size={20} />}</span>
             <span>{service.title}</span>
