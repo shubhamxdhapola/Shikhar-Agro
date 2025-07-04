@@ -8,7 +8,6 @@ const HomeServicesCard = ({ service }) => {
         }
       </span>
       <h2 className="text-lg font-semibold mt-4">{service.service}</h2>
-      {/* <span className="text-sm text-gray-600">{service.examples}</span> */}
       <p className="text-gray-600 mt-2">{service.description}</p>
     </div>
   );
