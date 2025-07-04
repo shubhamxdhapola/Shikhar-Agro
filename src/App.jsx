@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home.jsx";
-import AllServices from "./components/Pages/Services/all-services/AllServices.jsx";
+import AllServices from "./components/pages/services/all-services/AllServices.jsx";
 
 function App() {
   useEffect(() => {
