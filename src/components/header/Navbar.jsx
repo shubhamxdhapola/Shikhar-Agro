@@ -1,11 +1,10 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-scroll";
-import MobileNav from "./MobileNavbar/MobileNav";
+import MobileNavbar from './mobile-navbar/MobileNav'
 import { navTabs } from "../../utils/data";
-import { useState } from "react";
 
 const Navbar = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  
   return (
     <>
       <nav className="sticky top-3 md:top-5 z-10">
@@ -60,7 +59,7 @@ const Navbar = () => {
           </div>
         </div>
         {/* Mobile Navbar */}
-        <MobileNav />
+        <MobileNavbar />
       </nav>
     </>
   );

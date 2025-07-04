@@ -1,7 +1,8 @@
-const ServicesCard = ({ service }) => {
+const HomeServicesCard = ({ service }) => {
+  
   return (
-    <div className="bg-white rounded-lg p-6 text-center shadow-md mx-1 md:mx-2 lg:mx-0">
-      <span className="bg-green-500">
+    <div className="bg-white rounded-4xl p-6 text-center shadow hover:drop-shadow-lg hover:scale-105 duration-300 cursor-pointer mx-1 md:mx-2 lg:mx-0">
+      <span className="">
         {
           <service.icon className="bg-[#4b8b3b] mx-auto text-white w-12 h-12 rounded-full p-3" />
         }
@@ -13,4 +14,4 @@ const ServicesCard = ({ service }) => {
   );
 };
 
-export default ServicesCard;
+export default HomeServicesCard;

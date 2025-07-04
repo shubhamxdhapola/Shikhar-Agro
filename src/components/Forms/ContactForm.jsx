@@ -99,7 +99,7 @@ const ContactForm = () => {
 
       <button
         disabled={loading}
-        className={`px-5 py-2 font-medium w-full text-center text-white rounded-lg  duration-300 mt-2 text-sm md:text-md ${
+        className={`px-5 py-2 font-medium w-full text-center text-white rounded-lg duration-300 mt-2 text-sm md:text-md ${
           loading
             ? "cursor-not-allowed bg-gray-500 text-white/80"
             : "bg-[#4b8b3b] hover:bg-[#487a3b] cursor-pointer"

@@ -1,7 +1,8 @@
 import { Headset, Mail } from "lucide-react";
-import ContactForm from "./Forms/ContactForm";
+import ContactForm from '../forms/ContactForm'
 
 const Contact = () => {
+  
   return (
     <section name="contact" className="pb-28 lg:pb-36">
       <div className="mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-14">

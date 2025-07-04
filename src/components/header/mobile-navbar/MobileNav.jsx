@@ -1,9 +1,10 @@
-import { AlignRight, Sidebar, X } from "lucide-react";
+import { AlignRight, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import SideMenu from "./SideMenu";
 
 const MobileNav = () => {
+  
   const [openSideMenu, setOpenSideMenu] = useState(false);
   const toggleSideMenu = () => setOpenSideMenu(!openSideMenu);
 

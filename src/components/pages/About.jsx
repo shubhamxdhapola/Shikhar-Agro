@@ -1,5 +1,5 @@
-
 const About = () => {
+  
   return (
     <section className="pb-24 lg:pb-36" name="about">
       <div className="mx-auto px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-14">

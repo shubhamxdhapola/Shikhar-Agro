@@ -1,7 +1,8 @@
-import { SOCIAL_HANDLES } from "../utils/data";
 import { Link } from "react-scroll";
+import { SOCIAL_HANDLES } from "../../utils/data";
 
 const Hero = () => {
+  
   return (
     <section className="pt-18 md:pt-14 pb-32 lg:pb-36" name="home">
       <div className="flex flex-col gap-8 md:gap-0 md:flex-row justify-center items-center px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-14">

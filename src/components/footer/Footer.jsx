@@ -6,6 +6,7 @@ import { PiPhoneCallBold } from "react-icons/pi";
 import { Link } from "react-scroll";
 
 const Footer = () => {
+  
   const quickLinks = [
     { to: "offer", text: "Offer" },
     { to: "services", text: "Services" },

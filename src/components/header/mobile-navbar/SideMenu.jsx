@@ -4,6 +4,7 @@ import { navTabs } from "../../../utils/data";
 import { useEffect, useRef } from "react";
 
 const SideMenu = ({ openSideMenu, setOpenSideMenu, toggleSideMenu }) => {
+  
   const navRef = useRef(null);
 
   useEffect(() => {

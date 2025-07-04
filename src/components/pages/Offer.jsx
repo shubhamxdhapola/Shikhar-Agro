@@ -1,4 +1,3 @@
-import { Hourglass } from "lucide-react";
 import { Link } from "react-scroll";
 
 const Offer = () => {
