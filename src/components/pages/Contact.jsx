@@ -1,5 +1,5 @@
 import { Headset, Mail } from "lucide-react";
-import ContactForm from '../forms/ContactForm.jsx'
+import ContactForm from '../forms/ContactForm'
 
 const Contact = () => {
   
