@@ -2,7 +2,7 @@ import axios from "axios";
 import { Loader2, Mail, MapPinHouse, Phone, User } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import ContactFormInput from "../Inputs/ContactFormInput";
+import ContactFormInput from '../../components/inputs/ContactFormInput'
 
 const ContactForm = () => {
     

@@ -1,6 +1,6 @@
 import Navbar from "../header/Navbar";
 import Hero from "../pages/Hero";
-import Services from "../Pages/Services/Services";
+import Services from "../pages/services/Services";
 import About from "../pages/About";
 import Offer from "../pages/Offer";
 import Contact from "../pages/Contact";
